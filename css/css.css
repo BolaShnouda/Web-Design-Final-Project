@@ -1,0 +1,100 @@
+.custom_overlay3{
+    background-color: #51432faf;
+    position: absolute;
+    width: 100%;
+    top: 72%;
+    padding: 2%;
+    border-radius:5% ;
+}
+.custom_overlay3:hover{
+    background-color: #51432fc4;
+}
+.custom_overlay4{
+    background-color: #51432faf;
+    position: absolute;
+    width: 100%;
+    top: 68%;
+    padding: 1%;
+    border-radius:5% ;
+    height:31%;
+}
+.custom_overlay4:hover{
+    background-color: #51432fc4;
+}
+body { font-family: "Nunito Sans", sans-serif; }
+h1, h2, h3, h4, h5, .navbar-brand { font-family: "Marcellus", serif; }
+a{
+    color:white ;
+    text-decoration: none;
+}
+a:hover{
+    color:#C9A45F ;
+    text-decoration: none;
+}
+.bg-image{
+    background-image: url(../images/01-egypt-ancient-history-hero.webp);
+    background-size: cover;    
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+footer a {
+    color:white ;
+}
+
+.bg-image2{
+     background-image: url(../images/KARNAK\ TEMPLE.jpg.jpeg);
+    background-size: cover;    
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+.custom_overlay32{
+    background-color: #51432faf;
+    position: absolute;
+    width: 94.5%;
+    top: 77%;
+    padding: 2%;
+    border-radius:6% ;
+}
+.custom_overlay32:hover{
+    background-color: #51432fc4;
+}
+.hr hr{
+    border: 0;
+    border-top: 1px solid #c9972b;
+    margin: 2rem 0 1rem;
+    opacity: 1;
+}
+.bg-color-gold{
+    padding: 5rem 0;
+  color: #ffffff;
+  background: linear-gradient(135deg, #1d160b, #2a2012);
+}
+p{
+    
+    color: #a8a396;
+}
+
+
+
+.pill {
+    border: 2px solid wheat;
+    background :transparent;
+    color:#c9972b ;
+    padding: .45rem 1.1rem;
+    border-radius: 999px;      
+    font-weight: 600;
+    cursor: pointer;
+}
+.pill:hover {
+    border-color: #c9972b9a;
+    color: #c9972b;
+}
+.pill.active {                
+    background: #111111c2;
+    color: #e3b84a;
+    border-color: #111111;
+}
+
+/* .bg-color-brown{
+    /* background-color: #120e08; */
+/* } */
