@@ -1,15 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hidden Egypt </title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Cinzel:wght@700&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Cinzel:wght@700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
   <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body class="trip-page">
-  <div id="navbar"></div>
+  <nav class="navbar md:navbar-expand bg-1 shadow-sm bg-color-nav-footer">
+    <div class="container-fluid">
+      <a href="#" class="navbar-brand fw-bold fg-warning p-5">HIDDEN EGYPT</a>
+
+      <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarDrawer"
+        aria-controls="navbarDrawer" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" aria-hidden="true"></span>
+      </button>
+
+      <dialog class="drawer drawer-end" tabindex="-1" id="navbarDrawer" aria-labelledby="navbarDrawerLabel">
+        <div class="drawer-header">
+          <h5 class="drawer-title" id="navbarDrawerLabel">Menu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+        </div>
+
+        <div class="drawer-body">
+          <ul class="navbar-nav gap-5 ms-3">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Explore Egypt</a>
+            </li>
+            <li class="nav-item">
+              <a href="Adventure.html" class="nav-link active" aria-current="page">Adventure</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Map</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Build Your Trip</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Reviews</a>
+            </li>
+          </ul>
+
+          <div class="d-flex flex-column md:flex-row md:align-items-center ms-auto gap-3 mt-3 md:mt-0">
+            <a href="#" id="profileItem" class="d-none nav-link">Profile</a>
+            <a href="Login.html" id="loginItem" class="btn-solid theme-warning px-5 py-3">Login</a>
+          </div>
+        </div>
+      </dialog>
+    </div>
+  </nav>`
+
 
   <main>
     <section class="container text-center pt-5 pb-4">
@@ -63,21 +112,21 @@
       <div class="glass-card">
         <h4 class="plan-title">Trip Plan</h4>
         <div class="timeline">
-             <div class="timeline-line"></div>
+          <div class="timeline-line"></div>
           <div class="timeline-item">
-                        <span class="timeline-dot"></span>
+            <span class="timeline-dot"></span>
             <span class="timeline-day">Day 1</span>
             <h6>Wadi Al-Hitan</h6>
             <p>Whale fossils in the heart of the desert.</p>
           </div>
           <div class="timeline-item">
-                        <span class="timeline-dot"></span>
+            <span class="timeline-dot"></span>
             <span class="timeline-day">Day 2 - 3</span>
             <h6>White Desert</h6>
             <p>Safari and camping under the stars.</p>
           </div>
           <div class="timeline-item">
-                        <span class="timeline-dot"></span>
+            <span class="timeline-dot"></span>
             <span class="timeline-day">Day 4 - 5</span>
             <h6>Siwa Oasis</h6>
             <p>Salt lakes and the Shali fortress.</p>
@@ -86,10 +135,55 @@
       </div>
     </section>
   </main>
+  <footer class="bg-1 py-12 mt-auto bg-color-nav-footer">
+    <div class="container-fluid px-12">
+      <div class="row">
+        <div class="lg:col-3 md:col-6 mb-7">
+          <h4 class="fg-warning">HIDDEN EGYPT</h4>
+          <p>Discover Egypt differently: hidden places and real Adventure off the beaten path</p>
+        </div>
 
-  <div id="footer"></div>
+        <div class="lg:col-3 md:col-6 mb-7">
+          <h5 class="fg-warning">Quick Links</h5>
+          <ul class="list-unstyled p-5 ps-0 m-0">
+            <li><a href="#" class="text-decoration-none footer-link">Home</a></li>
+            <li class="pt-3"><a href="#" class="text-decoration-none footer-link">Explore Egypt</a></li>
+            <li class="pt-3"><a href="#" class="text-decoration-none footer-link">Interactive Map</a></li>
+            <li class="pt-3"><a href="#" class="text-decoration-none footer-link">Build Your Trip</a></li>
+          </ul>
+        </div>
 
-  <script src="js/bootstrap.bundle.min.js"></script>
+        <div class="lg:col-3 md:col-6 mb-7">
+          <h5 class="fg-warning">Adventures</h5>
+          <ul class="list-unstyled p-5 ps-0 m-0">
+            <li><a href="#" class="text-decoration-none footer-link">Safari</a></li>
+            <li class="pt-3"><a href="#" class="text-decoration-none footer-link">Camping</a></li>
+            <li class="pt-3"><a href="#" class="text-decoration-none footer-link">Historical Exploration</a></li>
+            <li class="pt-3"><a href="#" class="text-decoration-none footer-link">Marine</a></li>
+          </ul>
+        </div>
+        <div class="lg:col-3 md:col-6 mb-7">
+          <h5 class="fg-warning">Contact Us</h5>
+          <ul class="list-unstyled p-5 ps-0 m-0">
+            <li><a href="#" class="fg-body text-decoration-none footer-link">Email: Final-Project@gmail.com</a></li>
+            <li class="pt-3"><a href="#" class="fg-body text-decoration-none footer-link">Phone: 01010101010</a></li>
+            <li class="pt-3"><a href="#" class="fg-body text-decoration-none footer-link">Social Accounts:
+                Final-project</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <hr class="border-secondary">
+    <div class="text-center">
+      &copy; 2026 Hidden Egypt — All rights reserved
+    </div>
+    </div>
+  </footer>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+    crossorigin="anonymous"></script>
   <script src="js/trip-map.js"></script>
 </body>
+
 </html>

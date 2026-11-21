@@ -22,8 +22,25 @@ body.trip-page {
 main {
   flex: 1;
 }
+.bg-color-nav-footer{
+    background-color: #000000 !important;
+}
+.nav-link{
+    color: white;
+    transition: color 0.4s ease;
+}
+.nav-link:hover{
+    color: #ffc107;
+}
+footer a{
+    color: white;
+    transition: color 0.4s ease;
+}
+footer a:hover{
+    color: #ffc107 !important;
+}
 
-.site-navbar {
+/* .site-navbar {
   background-color: rgba(20, 14, 8, 0.75);
   
   border-bottom: 1px solid rgba(244, 228, 193, 0.22);
@@ -38,8 +55,8 @@ main {
 
 .site-navbar .brand:hover {
   color: #E0B25C;
-}
-
+} */
+/* 
 .site-navbar .nav-link {
   color: #F4E4C1;
   margin: 0 6px;
@@ -52,12 +69,12 @@ main {
 
 .site-navbar .nav-link.active {
   border-bottom: 2px solid #E0B25C;
-}
+} 
 
 .navbar-toggler {
   border-color: #E0B25C;
 }
-
+  */
 
 .btn-gold {
   background-image: linear-gradient(135deg, #E0B25C, #C0763A);
