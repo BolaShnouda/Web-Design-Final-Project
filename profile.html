@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+</head>
+
+<body class="bg-black ">
+    <section>
+        <nav class="navbar sm:navbar-expand bg-1 fg-2">
+            <div class="container">
+                <a class="navbar-brand gold-text" href="#">HIDDEN EGYPT</a>
+                <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" aria-hidden="true"></span>
+                </button>
+                <dialog class="drawer drawer-end " tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
+                    <div class="drawer-header">
+                        <h5 class="drawer-title" id="navbarNavLabel">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+                    </div>
+                    <div class="drawer-body">
+                        <ul class="navbar-nav mx-auto ">
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Explore Egypt</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Adventures</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="#">Map</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="#">Build Your Trip</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Reviews</a>
+                            </li>
+
+                        </ul>
+                        <button type="button" class="fg-black gold-bg btn-solid btn-styled">
+                            Log in
+                        </button>
+                    </div>
+                </dialog>
+            </div>
+        </nav>
+
+    </section>
+    <section>
+        <div id="bg-profile" class="position-relative">
+
+            <img src="assets/OIP.webp" alt="profile-img" class="profile-img position-absolute   rounded-circle ">
+        </div>
+        <div class="container px-0 text-center">
+            <p class="fs-2xl fw-semibold mb-0">[User Name]</p>
+            <p class="fg-emphasis-secondary">[email@gmail.com]</p>
+        </div>
+        <ul class="nav nav-pills mx-auto" id="pills-tab" role="tablist" style="margin-left: 43%;">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="tab" data-bs-target="#pills-home"
+                    type="button" role="tab" aria-controls="pills-home" aria-selected="true">Profile</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="tab" data-bs-target="#pills-profile"
+                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Edit</button>
+            </li>
+        </ul>
+        <div class="tab-content container mb-12" id="pills-tabContent">
+            <div class="tab-pane show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                <div class="row  mx-auto px-0 mt-12">
+                    <div class="sm:col-6 mb-3 sm:mb-0">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title gold-text">My Info</h4>
+                                <p class="card-text">Full name: [Name]</p>
+                                <p>Email: [Email]</p>
+                                <p>Phone: [Phone]</p>
+                                <p>City: [City]</p>
+                                <p>Member since: [Date]</p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sm:col-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title gold-text">My Travel Summary</h4>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h3 class="gold-text mb-0" id="placesCount">0</h3>
+                                        <p>Places visited</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <h3 class="gold-text mb-0" id="tripsCount">0</h3>
+                                        <p>Planned trips</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <h3 class="gold-text mb-0" id="reviewsCount">0</h3>
+                                        <p>Reviews written</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <h3 class="gold-text mb-0" id="savedCount">0</h3>
+                                        <p>Saved places</p>
+                                    </div>
+                                </div>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-12">
+                        <p class="gold-text fs-2xl fw-semibold">Places I Visited</p>
+                        <div class="owl-carousel">
+                            <div> Your Content 1</div>
+                            <div> Your Content 2</div>
+                            <div> Your Content 3</div>
+                            <div> Your Content 4</div>
+                            <div> Your Content 5</div>
+                            <div> Your Content 6</div>
+                            <div> Your Content 7</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane " id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                tabindex="0">
+                <div class="mt-12 ">
+                    <p class="gold-text fs-4xl fw-semibold mb-1">Edit Profile & Add a Place</p>
+                    <p>Update your details or log a place you have visited.</p>
+                </div>
+                <div class="mt-12">
+                    <div class="card card-row" style="max-width: 100%;">
+                        <div class="card-body profile-edit-card">
+                            <p class="gold-text fw-semibold fs-2xl">Personal Info</p>
+                            <div class="d-flex flex-row gap-6 align-items-center">
+                                <span class="avatar" style="--bs-avatar-size: 7rem;">
+                                    <img class="avatar-img" src="" alt="Profile Photo">
+                                </span>
+                                <button type="button" class="btn-outline theme-warning">Change Photo</button>
+                            </div>
+                            <form class="row g-3 mt-5">
+                                <div class="col-12">
+                                    <label for="inputName" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="inputName"
+                                        placeholder="Enter your Name">
+                                </div>
+                                <div class="md:col-6">
+                                    <label for="inputEmail4" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="inputEmail4"
+                                        placeholder="Enter your Email">
+                                </div>
+                                <div class="md:col-6">
+                                    <label for="inputPhone" class="form-label">Phone</label>
+                                    <input type="tel" class="form-control" id="inputPhone"
+                                        placeholder="Enter your phone" autocomplete="tel">
+                                </div>
+                                <div class="col-12">
+                                    <label for="inputCity" class="form-label">City</label>
+                                    <input type="text" class="form-control" id="inputCity"
+                                        placeholder="Enter your City">
+                                </div>
+                                <div class="form-field col-12">
+                                    <label for="fieldTextarea" class="form-label">About me</label>
+                                    <textarea class="form-control" id="fieldTextarea" rows="3"
+                                        placeholder="Tell us about your travels"></textarea>
+                                    <div class="form-text">
+                                        Be sure to include relevant details.
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-5 d-flex g-3 justify-content-between">
+                                    <button type="submit" class="btn-outline theme-warning ">Save changes</button>
+                                    <button type="submit" class="btn-outline theme-inverse">Cancel</button>                          
+                                </div>
+                            </form>
+                        </div>
+                        <img src="assets/Pharaonic engravings.jpg" class="card-img-end" style="max-width: 40%;"
+                            alt="...">
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>$(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 5
+                    }
+                }
+            })
+        });</script>
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+        crossorigin="anonymous"></script>
+    <footer class="bg-dark text-white py-5 mt-auto bg-color-nav-footer">
+        <div class="container-fluid px-5">
+            <div class="row ">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h4 class="text-warning ">HIDDEN EGYPT</h4>
+                    <p>Discover Egypt differently: hidden places and real Adventure off the beaten path</p>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="text-warning">Quick Links</h5>
+                    <ul class="list-unstyled p-3 ps-0 m-0">
+                        <li><a href="#" class="text-white text-decoration-none footer-link">
+                                Home
+                            </a></li>
+                        <li class="pt-2"><a href="#" class="text-white text-decoration-none footer-link">
+                                Explore Egypt
+                            </a></li>
+                        <li class="pt-2"><a href="#" class="text-white text-decoration-none footer-link">
+                                Interactive Map
+                            </a></li>
+                        <li class="pt-2"><a href="#" class="text-white text-decoration-none footer-link">
+                                Build Your Trip
+                            </a> </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="text-warning">Adventures</h5>
+                    <ul class="list-unstyled p-3 ps-0 m-0">
+                        <li><a href="#" class="text-white text-decoration-none footer-link">
+                                Safari
+                            </a> </li>
+                        <li class="pt-2"> <a href="#" class="text-white text-decoration-none footer-link">
+                                Camping
+                            </a> </li>
+                        <li class="pt-2"><a href="#" class="text-white text-decoration-none footer-link">
+                                Historical Exploration
+                            </a> </li>
+                        <li class="pt-2"><a href="#" class="text-white text-decoration-none footer-link">
+                                Marine
+                            </a> </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="text-warning">Contact Us</h5>
+                    <ul class="list-unstyled p-3 ps-0 m-0">
+                        <li><a href="#" class="text-white text-decoration-none footer-link">
+                                [Email]
+                            </a></li>
+                        <li class="pt-2"><a href="#" class="text-white text-decoration-none footer-link">
+                                [Phone]
+                            </a></li>
+                        <li class="pt-2"> <a href="#" class="text-white text-decoration-none footer-link">
+                                [Social Accounts]
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+            </a>
+
+
+
+
+
+
+            <hr class="border-secondary">
+            <div class="text-center">
+                © 2026 Hidden Egypt — All rights reserved
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+
+
+</html>
