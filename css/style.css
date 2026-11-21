@@ -23,8 +23,8 @@
 .profile-img {
     width: 150px;
     height: 150px;
-    top: 80%;
-    left: 42%;
+    top: 100%;
+    left: 50%;
 }
 
 #pills-tab .nav-link.active {
@@ -38,14 +38,65 @@
     border: 1px solid rgba(255, 255, 255, .08);
     border-radius: 0.25rem;
 }
+.site-footer {
+    background: #000;
+    border-top: 1px solid rgba(255, 255, 255, .08);
+    padding: 4rem 0 2rem;
+    margin-top: auto;
+    color: #cfc8ba;
+}
 
+.footer-brand {
+    color: #c9a063;
+    font-weight: 500;
+    margin: 0 0 .75rem;
+}
+
+.footer-title {
+    color: #c9a063;
+    font-size: 1.05rem;
+    font-weight: 500;
+    margin: 0 0 1rem;
+}
+
+.footer-text {
+    margin: 0;
+    color: #8d8676;
+    line-height: 1.7;
+}
+
+.footer-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: .6rem;
+}
+
+.footer-link {
+    color: #cfc8ba;
+    text-decoration: none;
+    transition: color .2s;
+}
+
+.footer-link:hover,
+.footer-link:focus-visible {
+    color: #c9a063;
+}
+
+.footer-bottom {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, .08);
+    text-align: center;
+    font-size: .85rem;
+    color: #6f6a5e;
+}
 body {
     background-color: #131212;
 }
 
-.bg-color-nav-footer {
-    background-color: #000000 !important;
-}
+
 
 .nav-link {
     color: white;
@@ -56,27 +107,6 @@ body {
     color: #ffc107;
 }
 
-footer a {
-    color: white;
-    transition: color 0.4s ease;
-}
-
-footer a:hover {
-    color: #ffc107 !important;
-}
-
-.bg-mini-card {
-    background-color: #3126262d !important;
-}
-
-.Forgot-Create-Hover {
-    color: white !important;
-    transition: color 0.4s ease;
-}
-
-.Forgot-Create-Hover:hover {
-    color: #ffc107 !important;
-}
 
 .hero-bg {
     background-color: #0d0d0d;
