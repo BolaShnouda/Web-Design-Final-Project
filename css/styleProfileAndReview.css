@@ -5,7 +5,16 @@
 .gold-bg {
     background-color: #ffc107;
 }
-
+body{
+    background-color: #131212;
+        background-image:
+        linear-gradient(rgba(20, 14, 8, 0.70), rgba(20, 14, 8, 0.85)),
+        url("../assets/bg.jpeg") !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 #bg-profile {
 
     background: url(../assets/OIP.webp) center / cover no-repeat;
@@ -38,40 +47,15 @@
     border: 1px solid rgba(255, 255, 255, .08);
     border-radius: 0.25rem;
 }
-.site-footer {
-    background: #000;
-    border-top: 1px solid rgba(255, 255, 255, .08);
-    padding: 4rem 0 2rem;
-    margin-top: auto;
-    color: #cfc8ba;
-}
 
-.footer-brand {
-    color: #c9a063;
-    font-weight: 500;
-    margin: 0 0 .75rem;
-}
 
-.footer-title {
-    color: #c9a063;
-    font-size: 1.05rem;
-    font-weight: 500;
-    margin: 0 0 1rem;
-}
 
-.footer-text {
-    margin: 0;
-    color: #8d8676;
-    line-height: 1.7;
-}
 
-.footer-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    gap: .6rem;
-}
+
+
+
+
+
 
 .footer-link {
     color: #cfc8ba;
@@ -84,14 +68,7 @@
     color: #c9a063;
 }
 
-.footer-bottom {
-    margin-top: 3rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid rgba(255, 255, 255, .08);
-    text-align: center;
-    font-size: .85rem;
-    color: #6f6a5e;
-}
+
 body {
     background-color: #131212;
 }

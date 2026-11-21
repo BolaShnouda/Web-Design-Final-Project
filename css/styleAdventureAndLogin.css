@@ -1,0 +1,48 @@
+body{
+    background-color: #131212;
+    background-image:
+    linear-gradient(rgba(20, 14, 8, 0.70), rgba(20, 14, 8, 0.85)),
+    url("../assets/bg.jpeg") !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.bg-color-nav-footer{
+    background-color: #000000 !important;
+}
+.nav-link{
+    color: white;
+    transition: color 0.4s ease;
+}
+.nav-link:hover{
+    color: #ffc107;
+}
+footer a{
+    color: white;
+    transition: color 0.4s ease ;
+}
+footer a:hover {
+    color: #ffc107 !important;
+}
+
+.bg-mini-card{
+    background-color: #3126262d !important;
+}
+.Forgot-Create-Hover{
+color: white !important;
+    transition: color 0.4s ease ;
+}
+.Forgot-Create-Hover:hover{
+color: #ffc107 !important;
+}
+.bg-mini-mini{
+ background-image: url("../assets/Mini.jpeg");
+}
+.Bg-BuildYourTrip{
+    background-image: url("../assets/BuildYourTrip.jpg");
+    background-size: cover;
+    background-position: center;
+    background-size: 100% 100% ;
+    
+}

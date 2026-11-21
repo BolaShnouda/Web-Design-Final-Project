@@ -7,7 +7,7 @@
     <title>Profile</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleProfileAndReview.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
@@ -18,11 +18,11 @@
 
 </head>
 
-<body class="bg-black ">
+<body class="bg-black">
     <section>
         <nav class="navbar md:navbar-expand bg-1 shadow-sm bg-color-nav-footer">
             <div class="container-fluid">
-                <a href="#" class="navbar-brand fw-bold fg-warning p-5">HIDDEN EGYPT</a>
+                <a href="index.html" class="navbar-brand fw-bold fg-warning p-5">HIDDEN EGYPT</a>
 
                 <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer"
                     data-bs-target="#navbarDrawer" aria-controls="navbarDrawer" aria-expanded="false"
@@ -39,27 +39,27 @@
                     <div class="drawer-body">
                         <ul class="navbar-nav gap-5 ms-3">
                             <li class="nav-item">
-                                <a href="#" class="nav-link">Home</a>
+                                <a href="index.html" class="nav-link">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">Explore Egypt</a>
+                                <a href="explore.html" class="nav-link">Explore Egypt</a>
                             </li>
                             <li class="nav-item">
                                 <a href="Adventure.html" class="nav-link active" aria-current="page">Adventure</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">Map</a>
+                                <a href="discover.html" class="nav-link">Map</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">Build Your Trip</a>
+                                <a href="trip.html" class="nav-link">Build Your Trip</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">Reviews</a>
+                                <a href="review.html" class="nav-link">Reviews</a>
                             </li>
                         </ul>
 
                         <div class="d-flex flex-column md:flex-row md:align-items-center ms-auto gap-3 mt-3 md:mt-0">
-                            <a href="#" id="profileItem" class="d-none nav-link">Profile</a>
+                            <a href="profile.html" id="profileItem" class="d-none nav-link">Profile</a>
                             <a href="Login.html" id="loginItem" class="btn-solid theme-warning px-5 py-3">Login</a>
                         </div>
                     </div>
@@ -91,7 +91,7 @@
         <div class="tab-content container mb-12" id="pills-tabContent">
             <div class="tab-pane show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
                 tabindex="0">
-                <div class="row  mx-auto px-0 mt-12">
+                <div class="row  mx-auto px-0 mt-12 ">
                     <div class="sm:col-6 mb-3 sm:mb-0">
                         <div class="card">
                             <div class="card-body">
@@ -100,7 +100,7 @@
                                 <p>Email: <span id="Email"> [Email]</span></p>
                                 <p>Phone: <span id="Phone"> [Phone]</span></p>
                                 <p>City: <span id="City">[City] </span></p>
-                                <p>Member since:<span id="Date">[Date]</span></p>
+                                
 
 
                             </div>
@@ -132,18 +132,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="mt-12">
-                        <p class="gold-text fs-2xl fw-semibold">Places I Visited</p>
-                        <div class="owl-carousel">
-                            <div> Your Content 1</div>
-                            <div> Your Content 2</div>
-                            <div> Your Content 3</div>
-                            <div> Your Content 4</div>
-                            <div> Your Content 5</div>
-                            <div> Your Content 6</div>
-                            <div> Your Content 7</div>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
             <div class="tab-pane " id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
@@ -214,7 +203,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="js/script.js"></script>
+    <script src="js/scriptProfileAndReview.js"></script>
     <script>$(document).ready(function () {
             $('.owl-carousel').owlCarousel({
                 loop: true,
@@ -248,12 +237,12 @@
                 <div class="lg:col-3 md:col-6 mb-7">
                     <h5 class="fg-warning">Quick Links</h5>
                     <ul class="list-unstyled p-5 ps-0 m-0">
-                        <li><a href="#" class="fg-body text-decoration-none footer-link">Home</a></li>
-                        <li class="pt-3"><a href="#" class="fg-body text-decoration-none footer-link">Explore Egypt</a>
+                        <li><a href="index.html" class="fg-body text-decoration-none footer-link">Home</a></li>
+                        <li class="pt-3"><a href="explore.html" class="fg-body text-decoration-none footer-link">Explore Egypt</a>
                         </li>
-                        <li class="pt-3"><a href="#" class="fg-body text-decoration-none footer-link">Interactive
+                        <li class="pt-3"><a href="discover.html" class="fg-body text-decoration-none footer-link">Interactive
                                 Map</a></li>
-                        <li class="pt-3"><a href="#" class="fg-body text-decoration-none footer-link">Build Your
+                        <li class="pt-3"><a href="trip.html" class="fg-body text-decoration-none footer-link">Build Your
                                 Trip</a></li>
                     </ul>
                 </div>
