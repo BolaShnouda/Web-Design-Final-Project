@@ -90,11 +90,11 @@
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title gold-text">My Info</h4>
-                                <p class="card-text">Full name: [Name]</p>
-                                <p>Email: [Email]</p>
-                                <p>Phone: [Phone]</p>
-                                <p>City: [City]</p>
-                                <p>Member since: [Date]</p>
+                                <p class="card-text" id="#fullName">Full name: [Name]</p>
+                                <p >Email: <span id="#Email"> [Email]</span></p>
+                                <p id="#Phone">Phone: [Phone] <span id="#Email"> [Email]</span></p>
+                                <p id="#City">City: <span id="#Email">[City] </span></p>
+                                <p id="#Date">Member since: [Date] <span id="#Email"> [Email]</span></p>
 
 
                             </div>
@@ -152,7 +152,7 @@
                             <p class="gold-text fw-semibold fs-2xl">Personal Info</p>
                             <div class="d-flex flex-row gap-6 align-items-center">
                                 <span class="avatar" style="--bs-avatar-size: 7rem;">
-                                    <img class="avatar-img" src="" alt="Profile Photo">
+                                    <img class="avatar-img" src="assets/key of life.jpg" alt="Profile Photo">
                                 </span>
                                 <button type="button" class="btn-outline theme-warning">Change Photo</button>
                             </div>
@@ -163,8 +163,8 @@
                                         placeholder="Enter your Name">
                                 </div>
                                 <div class="md:col-6">
-                                    <label for="inputEmail4" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="inputEmail4"
+                                    <label for="inputEmail" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="inputEmail"
                                         placeholder="Enter your Email">
                                 </div>
                                 <div class="md:col-6">
@@ -186,7 +186,7 @@
                                     </div>
                                 </div>
                                 <div class="col-12 mt-5 d-flex g-3 justify-content-between">
-                                    <button type="submit" class="btn-outline theme-warning ">Save changes</button>
+                                    <button type="submit" class="btn-outline theme-warning" id="#saveEditBtn">Save changes</button>
                                     <button type="submit" class="btn-outline theme-inverse">Cancel</button>                          
                                 </div>
                             </form>
@@ -208,6 +208,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"></script>
     <script>$(document).ready(function () {
             $('.owl-carousel').owlCarousel({
                 loop: true,
