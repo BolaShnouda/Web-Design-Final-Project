@@ -39,3 +39,10 @@ color: #ffc107 !important;
 .bg-mini-mini{
  background-image: url("../Images/Mini.jpeg");
 }
+.Bg-BuildYourTrip{
+    background-image: url("../Images/BuildYourTrip.jpg");
+    background-size: cover;
+    background-position: center;
+    background-size: 100% 100% ;
+    
+}
