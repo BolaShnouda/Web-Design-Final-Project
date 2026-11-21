@@ -1,5 +1,12 @@
 body{
     background-color: #131212;
+    background-image:
+    linear-gradient(rgba(20, 14, 8, 0.70), rgba(20, 14, 8, 0.85)),
+    url("../Images/Background.jpeg") !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .bg-color-nav-footer{
     background-color: #000000 !important;
@@ -28,4 +35,7 @@ color: white !important;
 }
 .Forgot-Create-Hover:hover{
 color: #ffc107 !important;
+}
+.bg-mini-mini{
+ background-image: url("../Images/Mini.jpeg");
 }

@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
 
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
 
     <title>Login Page</title>
 </head>
@@ -13,186 +14,159 @@
 <!-- !!!!!!!! Body !!!!!!! -->
 
 <body class="d-flex flex-column min-vh-100">
-    <nav class="navbar navbar-expand-md bg-body-tertiary shadow-sm bg-color-nav-footer">
-        <div class="container-fluid ">
-            <a href="#" class="navbar-brand fw-bold text-warning p-3" >HIDDEN EGYPT</a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"   >
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        
-            <div class="collapse navbar-collapse" id="navbarNav">
-                
-                <ul class="navbar-nav  mb-2 mb-lg-0 gap-3 ms-2">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Explore Egypt</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="Adventure.html" class="nav-link">Adventure</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Map</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Build Your Trip</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Reviews</a>
-                    </li>
 
-                </ul>
-                             <ul class="ms-auto  navbar-nav ">
-                                <li >
-<a href="#" id="profileItem" class=" d-none d-lg-block  nav-link ">Profile</a>
-                                </li>
-                                <li>
-<a href="Login.html" id="loginItem" class="btn btn-warning px-3 py-2 ms-auto text-dark" >Log Out</a>
-                                </li>
-                
+    <nav class="navbar md:navbar-expand bg-1 shadow-sm bg-color-nav-footer">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand fw-bold fg-warning p-5">HIDDEN EGYPT</a>
 
-                             </ul>   
-             </div>
-        </div>
+            <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarDrawer" aria-controls="navbarDrawer" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" aria-hidden="true"></span>
+            </button>
 
-    </nav>
-    
-<main class="container my-auto py-5">
-  <div class="row justify-content-center">
-    <div class="col-lg-10">
-      
-   
-      <div class="card bg-black text-white border-secondary shadow-lg rounded-4 overflow-hidden">
-        <div class="row g-0">
-          
-   
-          <div class="col-md-6 p-5 d-flex flex-column justify-content-center">
-            <h2 class="fw-bold mb-2 text-warning">Welcome back</h2>
-            <p class="text-secondary mb-4">Log in to see your saved places and planned trips.</p>
-            
-            <form>
-              <div class="mb-3">
-                <label class="form-label text-secondary small">Email</label>
-                <input type="email" class="form-control bg-dark text-white border-secondary" placeholder="you@example.com">
-              </div>
-
-              <div class="mb-3">
-                <label class="form-label text-secondary small">Password</label>
-                <input type="password" class="form-control bg-dark text-white border-secondary" placeholder="Enter your password">
-              </div>
-
-              <div class="d-flex justify-content-between align-items-center mb-4 small">
-                <div class="form-check">
-                  <input type="checkbox" class="form-check-input bg-dark border-secondary" id="rememberMe">
-                  <label class="form-check-label text-secondary" for="rememberMe">Remember me</label>
+            <dialog class="drawer drawer-end" tabindex="-1" id="navbarDrawer" aria-labelledby="navbarDrawerLabel">
+                <div class="drawer-header">
+                    <h5 class="drawer-title" id="navbarDrawerLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
                 </div>
-                <a href="#" class="text-warning text-decoration-none Forgot-Create-Hover">Forgot password?</a>
-              </div>
 
-              <button type="submit" class="btn btn-warning w-100 fw-bold py-2 mb-3 text-dark">Log in</button>
+                <div class="drawer-body">
+                    <ul class="navbar-nav gap-5 ms-3">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Explore Egypt</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Adventure.html" class="nav-link">Adventure</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Map</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Build Your Trip</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Reviews</a>
+                        </li>
+                    </ul>
 
-            
-              <p class="text-center text-secondary small mb-0">
-                New to Hidden Egypt? <a href="#" class="text-warning text-decoration-none Forgot-Create-Hover">Create an account</a>
-              </p>
-            </form>
-          </div>
-
-          <div class="col-md-6 d-none d-md-flex p-5 align-items-end" style="background-color: #111a2e;">
-            <h3 class="text-light fw-bold lh-base">
-              Find the Egypt most people <span class="text-warning">never see.</span>
-            </h3>
-          </div>
-
+                    <ul class="ms-auto navbar-nav">
+                        <li class="nav-item">
+                            <a href="#" id="profileItem" class="d-none lg:d-block nav-link">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Login.html" id="loginItem" class="btn-solid theme-warning px-5 py-3 ms-auto">Log Out</a>
+                        </li>
+                    </ul>
+                </div>
+            </dialog>
         </div>
-      </div>
+    </nav>
 
-    </div>
-  </div>
-</main>
-    
+    <main class="container my-auto py-12">
+        <div class="row justify-content-center">
+            <div class="lg:col-10">
 
+                <div class="card bg-black border-secondary shadow-lg rounded-9 overflow-hidden" data-bs-theme="dark">
+                    <div class="row g-0">
 
-<footer class="bg-dark text-white py-5 mt-auto bg-color-nav-footer">
-    <div class="container-fluid px-5">
-        <div class="row ">
-            <div class="col-lg-3 col-md-6 mb-4">
-        <h4 class="text-warning " >HIDDEN EGYPT</h4>
-            <p>Discover Egypt differently: hidden places and real Adventure off the beaten path</p>
+                        <div class="md:col-6 p-12 d-flex flex-column justify-content-center">
+                            <h2 class="fw-bold mb-3 fg-warning">Welcome back</h2>
+                            <p class="fg-secondary mb-7">Log in to see your saved places and planned trips.</p>
+
+                            <form>
+                                <div class="mb-5">
+                                    <label class="form-label fg-secondary small" for="loginEmail">Email</label>
+                                    <input type="email" id="loginEmail" class="form-control bg-2 border-secondary" placeholder="you@example.com">
+                                </div>
+
+                                <div class="mb-5">
+                                    <label class="form-label fg-secondary small" for="loginPassword">Password</label>
+                                    <input type="password" id="loginPassword" class="form-control bg-2 border-secondary" placeholder="Enter your password">
+                                </div>
+
+                                <div class="d-flex justify-content-between align-items-center mb-7 small">
+                                    <!-- v6 checkbox: .check goes directly on the input, inside .form-field -->
+                                    <div class="form-field">
+                                        <input type="checkbox" class="check" id="rememberMe">
+                                        <label class="fg-secondary" for="rememberMe">Remember me</label>
+                                    </div>
+                                    <a href="#" class="fg-warning text-decoration-none Forgot-Create-Hover">Forgot password?</a>
+                                </div>
+
+                                <button type="submit" class="btn-solid theme-warning w-100 fw-bold py-3 mb-5">Log in</button>
+
+                                <p class="text-center fg-secondary small mb-0">
+                                    New to Hidden Egypt? <a href="#" class="fg-warning text-decoration-none Forgot-Create-Hover">Create an account</a>
+                                </p>
+                            </form>
+                        </div>
+
+                        <div class="md:col-6 d-none md:d-flex p-12 align-items-end" style="background-color: #111a2e;">
+                            <h3 class="fw-bold lh-md">
+                                Find the Egypt most people <span class="fg-warning">never see.</span>
+                            </h3>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
-
-             <div class="col-lg-3 col-md-6 mb-4">
-    <h5 class="text-warning">Quick Links</h5>
-            <ul class="list-unstyled p-3 ps-0 m-0">
-               <li ><a href="#" class="text-white text-decoration-none footer-link">
-                    Home
-                </a></li>
-              <li class="pt-2"><a href="#" class="text-white text-decoration-none footer-link">
-                    Explore Egypt
-                </a></li>
-             <li class="pt-2"><a href="#" class="text-white text-decoration-none footer-link">
-                    Interactive Map
-                </a></li>
-            <li class="pt-2"><a href="#" class="text-white text-decoration-none footer-link">   
-                    Build Your Trip
-              </a>  </li>
-            </ul>
-            </div>
-
-             <div class="col-lg-3 col-md-6 mb-4">
-    <h5 class="text-warning">Adventures</h5>
-            <ul class="list-unstyled p-3 ps-0 m-0">
-         <li ><a href="#" class="text-white text-decoration-none footer-link">   
-                    Safari
-               </a> </li>
-         <li class="pt-2"> <a href="#" class="text-white text-decoration-none footer-link">      
-                    Camping
-               </a> </li>
-         <li class="pt-2"><a href="#" class="text-white text-decoration-none footer-link">      
-                    Historical Exploration
-               </a> </li>
-          <li class="pt-2"><a href="#" class="text-white text-decoration-none footer-link">     
-                    Marine
-               </a> </li>
-            </ul>
-            </div>
-
-             <div class="col-lg-3 col-md-6 mb-4">
-      <h5 class="text-warning">Contact Us</h5>
-            <ul class="list-unstyled p-3 ps-0 m-0">
-         <li ><a href="#" class="text-white text-decoration-none footer-link">   
-                    [Email]
-                </a></li>
-          <li class="pt-2"><a href="#" class="text-white text-decoration-none footer-link">    
-                    [Phone]
-                </a></li>
-           <li class="pt-2"> <a href="#" class="text-white text-decoration-none footer-link">   
-                    [Social Accounts]
-                </a></li>
-            </ul>
         </div>
+    </main>
+
+
+    <footer class="bg-1 py-12 mt-auto bg-color-nav-footer">
+        <div class="container-fluid px-12">
+            <div class="row">
+                <div class="lg:col-3 md:col-6 mb-7">
+                    <h4 class="fg-warning">HIDDEN EGYPT</h4>
+                    <p>Discover Egypt differently: hidden places and real Adventure off the beaten path</p>
+                </div>
+
+                <div class="lg:col-3 md:col-6 mb-7">
+                    <h5 class="fg-warning">Quick Links</h5>
+                    <ul class="list-unstyled p-5 ps-0 m-0">
+                        <li><a href="#" class="fg-body text-decoration-none footer-link">Home</a></li>
+                        <li class="pt-3"><a href="#" class="fg-body text-decoration-none footer-link">Explore Egypt</a></li>
+                        <li class="pt-3"><a href="#" class="fg-body text-decoration-none footer-link">Interactive Map</a></li>
+                        <li class="pt-3"><a href="#" class="fg-body text-decoration-none footer-link">Build Your Trip</a></li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-3 md:col-6 mb-7">
+                    <h5 class="fg-warning">Adventures</h5>
+                    <ul class="list-unstyled p-5 ps-0 m-0">
+                        <li><a href="#" class="fg-body text-decoration-none footer-link">Safari</a></li>
+                        <li class="pt-3"><a href="#" class="fg-body text-decoration-none footer-link">Camping</a></li>
+                        <li class="pt-3"><a href="#" class="fg-body text-decoration-none footer-link">Historical Exploration</a></li>
+                        <li class="pt-3"><a href="#" class="fg-body text-decoration-none footer-link">Marine</a></li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-3 md:col-6 mb-7">
+                    <h5 class="fg-warning">Contact Us</h5>
+                    <ul class="list-unstyled p-5 ps-0 m-0">
+                        <li><a href="#" class="fg-body text-decoration-none footer-link">Email: Final-Project@gmail.com</a></li>
+                        <li class="pt-3"><a href="#" class="fg-body text-decoration-none footer-link">Phone: 01010101010</a></li>
+                        <li class="pt-3"><a href="#" class="fg-body text-decoration-none footer-link">Social Accounts: Final-project</a></li>
+                    </ul>
+                </div>
             </div>
-    </a>
-            
 
-            
-
-          
-
-        <hr class="border-secondary">
-        <div class="text-center">
-© 2026 Hidden Egypt — All rights reserved
+            <hr class="border-secondary">
+            <div class="text-center">
+                &copy; 2026 Hidden Egypt — All rights reserved
+            </div>
         </div>
+    </footer>
 
-    </div>
-</footer>
+   
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
 
-
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js" integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu" crossorigin="anonymous"></script>
-
-   <script src="Login.js"></script>
+    <script src="Login.js"></script>
 </body>
 
 </html>
